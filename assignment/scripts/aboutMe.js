@@ -28,7 +28,7 @@ console.log(food);
 let pets = 1;
 console.log(pets);
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 2;
+let friendsPets = 7;
 console.log(friendsPets);
 // 11 - Add two pets to your `pets` variable
 pets += 2;
@@ -40,8 +40,7 @@ console.log(allowedPets);
 // if it's not true, console log "How about we stay home?"
 if(adventurous) {
   console.log('Adventures are great!');
-}
-else {
+}else {
   console.log('How about we stay home?');
 }
 
@@ -58,11 +57,9 @@ if(luckyNumber == 2 && adventurous) {
 // if the value of `pets` is greater than the value of `allowedPets`.
 if(pets < allowedPets) {
   console.log('I can have more pets!');
-}
-if(pets == allowedPets) {
+}else if(pets == allowedPets) {
   console.log('I have enough pets');
-}
-if(pets > allowedPets) {
+}else if(pets > allowedPets) {
   console.log('Oh no, I have too many pets!');
 }
 
@@ -73,6 +70,14 @@ if(pets > allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+let mostPets = 'highest number of pets owned'
+
+if(pets > friendsPets) {
+  console.log(mostPets = pets);
+}else if(pets < friendsPets) {
+  console.log(mostPets = friendsPets);
+}
+console.log(mostPets);
 
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
@@ -80,5 +85,18 @@ if(pets > allowedPets) {
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
+switch(luckyNumber) {
+  case 1:
+  console.log('First is the worst');
+  break;
+  case 2:
+  console.log('Second is the best');
+  break;
+  case 3:
+  console.log('Third is the one with the polka dot dress');
+  break;
+  default:
+  console.log('Luck is what happens when preparation meets opportunity');
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
