@@ -74,7 +74,7 @@ let mostPets;
 
 if (pets > friendsPets) {
   console.log(mostPets = pets);
-} else if(pets < friendsPets) {
+} else if (pets < friendsPets) {
   console.log(mostPets = friendsPets);
 }
 console.log(mostPets);
